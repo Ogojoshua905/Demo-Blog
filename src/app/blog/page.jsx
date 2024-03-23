@@ -1,7 +1,7 @@
 import Navbar from "../comps/Nav";
 import React from 'react'
 
-export default function c() {
+export default function page() {
   return (
     <div>
       

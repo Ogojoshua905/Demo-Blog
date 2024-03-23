@@ -1,0 +1,9 @@
+.foot{
+    background-color: rgb(0, 0, 1);
+    color: white;
+    height:  20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
