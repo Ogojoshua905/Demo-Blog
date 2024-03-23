@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Navbar() {
   return (
     <nav>
-        <ul>
+        <ul className="flex justify-between p-8 bg-slate-900 text-white">
             <li>
                 <Link href="/">Home</Link>
             </li>
@@ -18,7 +18,7 @@ export default function Navbar() {
             </li>
 
             <li>
-                <Link>Blog</Link>
+                <Link href='/blog'>Blog</Link>
             </li>
         </ul>
     </nav>

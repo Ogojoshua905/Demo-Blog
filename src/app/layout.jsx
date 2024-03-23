@@ -1,8 +1,14 @@
 import { Vujahday_Script } from "next/font/google";
 import "./globals.css";
+import Navbar from "./comps/Nav";
+import Footer from "./comps/Footer";
+import Josh from "./comps/styles.module.css"
+import "./globals.css"
 
-const Viju = Vujahday_Script({ subsets: ["latin"],
-weight: ["400"] });
+const Viju = Vujahday_Script({ 
+subsets: ["latin"],
+weight: ["400"] 
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +18,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={Viju.className}>{children}</body>
+    <html lang="en" className={Josh.main}>
+      <body className={`${Viju.className} text-2xl`}>{children}
+      <Navbar />
+      <div className="min-h-[80vh]">
+
+        {children}
+      </div>
+
+      <Footer />
+      </body>
     </html>
   );
 }
